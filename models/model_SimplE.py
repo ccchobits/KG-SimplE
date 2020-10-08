@@ -8,12 +8,11 @@ device = torch.device("cuda")
 
 
 class SimplE(nn.Module):
-    def __init__(self, n_ent, n_rel, depth, hidden, margin, reg, num_batch):
+    def __init__(self, n_ent, n_rel, depth, margin, reg, num_batch):
         super(SimplE, self).__init__()
 
         self.margin = margin
         self.depth = depth
-        self.hidden = hidden
         self.reg = reg
         self.num_batch = num_batch
         self.ent_head_embedding = nn.Embedding(n_ent, depth)

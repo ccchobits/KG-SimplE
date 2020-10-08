@@ -75,7 +75,7 @@ num_batch = math.ceil(n_train / configs.bs)
 ### create model and optimizer
 if configs.debug:
     print("start building model...", flush=True)
-model = SimplE(n_ent, n_rel, dim, hidden, margin, reg, num_batch).to(device)
+model = SimplE(n_ent, n_rel, dim, margin, reg, num_batch).to(device)
 if configs.debug:
     print("built model: ", flush=True)
     print(model, flush=True)
