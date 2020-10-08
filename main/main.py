@@ -36,7 +36,7 @@ parser.add_argument("--bern", type=bool_parser, default=False,
 parser.add_argument("--margin", type=float, default=1.0)
 parser.add_argument("--norm", type=int, default=2, help="[1 | 2]")
 parser.add_argument("--log", type=bool_parser, default=True, help="logging or not")
-parser.add_argument("--model", type=str, default="SME", help="The model for training")
+parser.add_argument("--model", type=str, default="Simple", help="The model for training")
 parser.add_argument("--loss", type=str, default="margin", help="loss function")
 parser.add_argument("--hidden", type=int, default=100, help="hidden layer")
 parser.add_argument("--neg_ratio", type=int, default=1, help="the ratio between the number of negative and positive samples")

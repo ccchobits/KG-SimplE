@@ -7,7 +7,7 @@ class Writer:
         self.filtered_arguments = ["save_path", "seed", "dataset_path", "mode", "log", "gpu"]
         self.default_span = 5
         self.span = {"bern": 5, "bs": 5, "dataset": 5, "dim": 3, "epochs": 4, "init_lr": 4, "lr_decay": 3,
-                     "margin": 3, "norm": 1, "model": 10, "loss": 6}
+                     "margin": 3, "norm": 1, "model": 4, "loss": 6}
         self.head = ["model"]
         self.tail = ["hidden"]
         self.order = self.get_order()
